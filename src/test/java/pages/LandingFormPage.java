@@ -1,5 +1,6 @@
 package pages;
 
+import com.codeborne.selenide.ClickOptions;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import pages.components.CheckResultComponent;
@@ -17,28 +18,28 @@ public class LandingFormPage {
 
     @Step("Кликнуть по кнопке 'Получить консультацию'")
     public LandingFormPage consultationClick() {
-        consultation.click();
+        consultation.click(ClickOptions.usingJavaScript());
 
         return this;
     }
 
     @Step("Кликнуть по кнопке 'Отправить'")
     public LandingFormPage consultationSendButton() {
-        consultationSendButton.click();
+        consultationSendButton.click(ClickOptions.usingJavaScript());
 
         return this;
     }
 
     @Step("Закрыть модальное окно 'Получить консультацию'")
     public LandingFormPage consultationCloseClick() {
-        consultationCloseButton.click();
+        consultationCloseButton.click(ClickOptions.usingJavaScript());
 
         return this;
     }
 
     @Step("ЗКликнуть по кнопке 'Записаться'")
     public LandingFormPage signUpButtonClick() {
-        signUpButton.scrollTo().click();
+        signUpButton.scrollTo().click(ClickOptions.usingJavaScript());
 
         return this;
     }
