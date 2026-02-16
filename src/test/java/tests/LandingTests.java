@@ -37,7 +37,7 @@ public class LandingTests extends TestBase {
     void successfulNoEmptyConsultationFormTest() {
         landingFormPage.consultationClick()
                 .consultationSendButton()
-                .checkModalConsultationWindowErrorValue("Пожалуйста, заполните все обязательные поля");
+                .checkModalConsultationWindowErrorValue("Please fill out all required fields");
     }
 
     @Test
