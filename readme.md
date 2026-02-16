@@ -12,7 +12,7 @@
 ---
 ## Отчёт в Telegram при помощи бота
 
-<img src="https://github.com/matuation/silachclubLandingTest/blob/main/pics/allurebot.png" width="300" height="300"/>
+<img src="https://github.com/matuation/silachclubLandingTest/blob/main/pics/allurebot.png" width="300" height="300" alt=""/>
 
 ---
 
