@@ -13,7 +13,11 @@
 - Jenkins <img src="https://github.com/matuation/silachclubLandingTest/blob/main/media/jenkins.png" width="50" height="50"/>
 - Telegram <img src="https://github.com/matuation/silachclubLandingTest/blob/main/media/telegram.png" width="50" height="50"/>
 
+---
 
+## Видео выполнения теста
+
+(https://github.com/matuation/silachclubLandingTest/blob/main/media/allurevid.mp4)
 
 ---
 ## Джоба в [Jenkins](https://jenkins.autotests.cloud/view/java_students/job/silachclubLanding_ui_Tests/)
