@@ -43,6 +43,7 @@ public class TestBase {
         open(baseUrl);
     }
 
+    @BeforeEach
     void addListener() {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
     }
