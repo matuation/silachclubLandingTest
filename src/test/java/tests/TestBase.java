@@ -39,11 +39,6 @@ public class TestBase {
     }
 
     @BeforeEach
-    void openMain() {
-        open(baseUrl);
-    }
-
-    @BeforeEach
     void addListener() {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
     }

@@ -5,7 +5,9 @@ import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import pages.components.CheckResultComponent;
 
+import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.open;
 
 public class LandingFormPage {
     private final SelenideElement consultation = $("[class='tn-atom'][href='#popup:myform']"),
@@ -15,6 +17,12 @@ public class LandingFormPage {
 
     CheckResultComponent checkResultComponent = new CheckResultComponent();
 
+    @Step("Открыть Главую страницу")
+    public LandingFormPage openMain() {
+        open(baseUrl);
+
+        return this;
+    }
 
     @Step("Кликнуть по кнопке 'Получить консультацию'")
     public LandingFormPage consultationClick() {

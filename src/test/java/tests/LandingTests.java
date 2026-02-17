@@ -12,14 +12,16 @@ public class LandingTests extends TestBase {
     @Test
     @DisplayName("На странице есть кнопка 'Получить консультацию'")
     void successfulGetConsultationButtonTest() {
-        landingFormPage.checkConsultationButtonValue("Получить консультацию");
+        landingFormPage.openMain().
+                checkConsultationButtonValue("Получить консультацию");
     }
 
     @Test
     @DisplayName("Пользователь может открыть модально окно 'Получить консультацию'")
     void successfulGetConsultationButtonPressTest() {
 
-        landingFormPage.consultationClick().
+        landingFormPage.openMain().
+                consultationClick().
                 checkModalConsultationWindowHeaderValue("Получите бесплатную консультацию");
     }
 
@@ -27,7 +29,8 @@ public class LandingTests extends TestBase {
     @DisplayName("Пользователь может закрыть модально окно 'Получить консультацию'")
     void successfulGetConsultationWindowCloseTest() {
 
-        landingFormPage.consultationClick()
+        landingFormPage.openMain().
+                consultationClick()
                 .consultationCloseClick()
                 .checkMainPhraseIsVisible();
     }
@@ -35,7 +38,8 @@ public class LandingTests extends TestBase {
     @Test
     @DisplayName("Пользователь не может отправить пустой запрос на консультацию")
     void successfulNoEmptyConsultationFormTest() {
-        landingFormPage.consultationClick()
+        landingFormPage.openMain().
+                consultationClick()
                 .consultationSendButton()
                 .checkModalConsultationWindowErrorValue("Please fill out all required fields");
     }
@@ -43,7 +47,8 @@ public class LandingTests extends TestBase {
     @Test
     @DisplayName("Пользователь может нажать 'Записаться'")
     void successfulSignUpButtonTest() {
-        landingFormPage.signUpButtonClick()
+        landingFormPage.openMain().
+                signUpButtonClick()
                 .checkInfoWindowVisible();
     }
 
