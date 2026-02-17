@@ -16,9 +16,7 @@
 ---
 
 ## Видео выполнения теста
-
-(https://github.com/matuation/silachclubLandingTest/blob/main/media/allurevid.mp4)
-
+![allurereport](https://github.com/user-attachments/assets/e48bd3b2-4171-4ef4-948e-ae5bc9c03c07)
 ---
 ## Джоба в [Jenkins](https://jenkins.autotests.cloud/view/java_students/job/silachclubLanding_ui_Tests/)
 
