@@ -4,7 +4,7 @@
 
 - Java <img src="https://github.com/matuation/silachclubLandingTest/blob/main/media/java.png" width="50" height="50"/>
 - IntelliJ IDEA <img src="https://github.com/matuation/silachclubLandingTest/blob/main/media/intellijidea.png" width="50" height="50"/>
-- Git <img src="https://github.com/matuation/silachclubLandingTest/blob/main/media/git.jpg" width="50" height="50"/>
+- Git <img src="https://github.com/matuation/silachclubLandingTest/blob/main/media/git.png" width="50" height="50"/>
 - GitHub <img src="https://github.com/matuation/silachclubLandingTest/blob/main/media/github.png" width="50" height="50"/>
 - Gradle <img src="https://github.com/matuation/silachclubLandingTest/blob/main/media/gradle.png" width="50" height="50"/>
 - JUnit5 <img src="https://github.com/matuation/silachclubLandingTest/blob/main/media/junit5.png" width="50" height="50"/>
@@ -17,7 +17,7 @@
 
 ## Видео выполнения теста
 
-![allurereport](https://github.com/user-attachments/assets/e48bd3b2-4171-4ef4-948e-ae5bc9c03c07)
+https://github.com/user-attachments/assets/8b793b35-5a2a-4d82-ac75-ab4371994cf0
 
 ---
 ## Джоба в [Jenkins](https://jenkins.autotests.cloud/view/java_students/job/silachclubLanding_ui_Tests/)
