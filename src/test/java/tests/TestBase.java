@@ -13,19 +13,16 @@ import java.util.Map;
 
 import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Selenide.closeWebDriver;
-import static com.codeborne.selenide.Selenide.open;
 
 public class TestBase {
     public static String browser = System.getProperty("browser", "chrome");
-    public static String remoteBaseUsername = System.getProperty("remoteBaseUsername");
-    public static String remoteBasePass = System.getProperty("remoteBasePass");
-    public static String remoteBaseUrl = System.getProperty("remoteBaseUrl");
+
 
     @BeforeAll
     static void beforeAll() {
-        if (remoteBaseUrl != null) {
-            Configuration.remote = "https://" + remoteBaseUsername + ":" + remoteBasePass + "@" + remoteBaseUrl;
-        }
+
+            Configuration.remote = System.getProperty("remote_browser");
+
         baseUrl = System.getProperty("baseUrl", "https://silachclub.ru/");
         Configuration.browser = browser;
         Configuration.browserVersion = System.getProperty("browserVersion");
