@@ -40,19 +40,20 @@ public class Attachments {
     }
 
     @Attachment(value = "Видео", type = "text/html", fileExtension = ".html")
-    public static String addVideo() {
+    public static String addVideo(String sessionId) {
+        String videoUrl = "http://185.154.53" + sessionId + ".mp4";
         return "<html><body><video width='100%' height='100%' controls autoplay><source src='"
-                + getVideoUrl()
+                + videoUrl
                 + "' type='video/mp4'></video></body></html>";
     }
 
-    public static URL getVideoUrl() {
-        String videoUrl = "http://185.154.53.106:4444/video/" + sessionId() + ".mp4";
-        try {
-            return new URL(videoUrl);
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        }
-        return null;
-    }
+//    public static URL getVideoUrl() {
+//        String videoUrl = "http://185.154.53.106:4444/video/" + sessionId() + ".mp4";
+//        try {
+//            return new URL(videoUrl);
+//        } catch (MalformedURLException e) {
+//            e.printStackTrace();
+//        }
+//        return null;
+//    }
 }

@@ -1,6 +1,7 @@
 package tests;
 
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import config.WebConfig;
 import helpers.Attachments;
@@ -52,9 +53,10 @@ public class TestBase {
         Attachments.screenshotAs("Скрин");
         Attachments.pageSource();
         Attachments.browserConsoleLogs();
-
-        Attachments.addVideo();
+        String sessionId = Selenide.sessionId().toString();
         closeWebDriver();
+        Attachments.addVideo(sessionId);
+
     }
 }
 
