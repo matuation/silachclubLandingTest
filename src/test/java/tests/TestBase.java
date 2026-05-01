@@ -50,8 +50,6 @@ public class TestBase {
 
     @AfterEach
     void addAttachments() {
-        String sessionId = Selenide.sessionId().toString();
-        System.out.println("DEBUG: Session ID for Video: " + sessionId);
         Attachments.screenshotAs("Скрин");
         Attachments.pageSource();
         Attachments.browserConsoleLogs();
@@ -62,7 +60,7 @@ public class TestBase {
 //        } catch (InterruptedException e) {
 //            throw new RuntimeException(e);
 //        }
-        Attachments.addVideo(sessionId);
+        Attachments.addVideo();
 
     }
 }
