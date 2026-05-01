@@ -61,7 +61,7 @@ public class TestBase {
         closeWebDriver();
         if (config.isRemote()) {
             try {
-                Thread.sleep(5000);
+                Thread.sleep(10000);
             } catch (InterruptedException ignored) {
             }
             Attachments.addVideo(sessionId);
