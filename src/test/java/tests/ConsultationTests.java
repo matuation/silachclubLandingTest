@@ -5,7 +5,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import pages.LandingFormPage;
 
-@Epic("EPC-3 Взаимодействие с блоком консультации")
+@Epic("EPC-4 Взаимодействие с блоком консультации")
 @Story("STR-18 Консультация")
 @Feature("Получение консультации")
 public class ConsultationTests extends TestBase{
