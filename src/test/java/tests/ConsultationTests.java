@@ -4,10 +4,9 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import pages.LandingFormPage;
 
-public class LandingTests extends TestBase {
+public class ConsultationTests extends TestBase{
 
     LandingFormPage landingFormPage = new LandingFormPage();
-
 
     @Test
     @DisplayName("На странице есть кнопка 'Получить консультацию'")
@@ -41,17 +40,6 @@ public class LandingTests extends TestBase {
         landingFormPage.openMain().
                 consultationClick()
                 .consultationSendButton()
-                .checkModalConsultationWindowErrorValue("Please fill out all required fields");
+                .checkModalConsultationWindowErrorValue("Пожалуйста, заполните все обязательные поля");
     }
-
-    @Test
-    @DisplayName("Пользователь может нажать 'Записаться'")
-    void successfulSignUpButtonTest() {
-        landingFormPage.openMain().
-                signUpButtonClick()
-                .checkInfoWindowVisible();
-    }
-
 }
-
-

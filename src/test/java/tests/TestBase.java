@@ -2,8 +2,10 @@ package tests;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
+import config.WebConfig;
 import helpers.Attachments;
 import io.qameta.allure.selenide.AllureSelenide;
+import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -15,17 +17,21 @@ import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 
 public class TestBase {
-    public static String browser = System.getProperty("browser", "chrome");
 
+    private static final WebConfig config = ConfigFactory.create(WebConfig.class, System.getProperties());
 
     @BeforeAll
     static void beforeAll() {
 
-            Configuration.remote = System.getProperty("remote_browser");
+        System.out.println("ENVIRONMENT: " + System.getProperty("env"));
+        System.out.println("IS REMOTE: " + config.isRemote());
 
+        if (config.isRemote()) {
+            Configuration.remote = config.remoteUrl();
+        }
         baseUrl = System.getProperty("baseUrl", "https://silachclub.ru/");
-        Configuration.browser = browser;
-        Configuration.browserVersion = System.getProperty("browserVersion");
+        Configuration.browser = config.browser();
+        Configuration.browserVersion = config.browserVersion();
         Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
         Configuration.pageLoadStrategy = System.getProperty("pageLoadStrat", "eager");
         DesiredCapabilities capabilities = new DesiredCapabilities();
