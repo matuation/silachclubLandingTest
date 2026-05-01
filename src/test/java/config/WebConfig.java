@@ -13,7 +13,7 @@ public interface WebConfig extends Config {
     String browser();
 
     @Key("browserVersion")
-    @DefaultValue("113.0")
+    @DefaultValue("")
     String browserVersion();
 
     @Key("isRemote")
