@@ -11,6 +11,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import pages.LandingFormPage;
 
 import java.util.Map;
 
@@ -20,6 +21,8 @@ import static com.codeborne.selenide.Selenide.closeWebDriver;
 public class TestBase {
 
     private static final WebConfig config = ConfigFactory.create(WebConfig.class, System.getProperties());
+
+    LandingFormPage landingFormPage = new LandingFormPage();
 
     @BeforeAll
     static void beforeAll() {

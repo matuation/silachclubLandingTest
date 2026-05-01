@@ -10,9 +10,6 @@ import pages.LandingFormPage;
 @Feature("Выбор тренера")
 public class CoachTests extends TestBase {
 
-    LandingFormPage landingFormPage = new LandingFormPage();
-
-
     @Test
     @Owner("ASchastlivtsev")
     @Severity(SeverityLevel.CRITICAL)
