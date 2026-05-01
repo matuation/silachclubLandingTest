@@ -24,12 +24,6 @@ public class LandingFormPage {
     @Step("Открыть Главую страницу")
     public LandingFormPage openMain() {
         open(baseUrl);
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-
         return this;
     }
 
