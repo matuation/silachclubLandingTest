@@ -59,13 +59,14 @@ public class TestBase {
         Attachments.browserConsoleLogs();
 
         closeWebDriver();
-        if (config.isRemote()) {
-            try {
-                Thread.sleep(10000);
-            } catch (InterruptedException ignored) {
-            }
-            Attachments.addVideo(sessionId);
+        try {
+            Thread.sleep(7000); // 7 секунд — хватит даже для длинного видео
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
+
+            Attachments.addVideo(sessionId);
+
     }
 }
 
