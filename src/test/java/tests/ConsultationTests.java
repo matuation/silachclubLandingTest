@@ -1,14 +1,20 @@
 package tests;
 
+import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import pages.LandingFormPage;
 
+
+@Epic("EPC-3 Взаимодействие с блоком консультации")
+@Story("STR-18 Консультация")
+@Feature("Получение консультации")
 public class ConsultationTests extends TestBase{
 
     LandingFormPage landingFormPage = new LandingFormPage();
 
     @Test
+    @Severity(SeverityLevel.BLOCKER)
     @DisplayName("На странице есть кнопка 'Получить консультацию'")
     void successfulGetConsultationButtonTest() {
         landingFormPage.openMain().
@@ -16,6 +22,7 @@ public class ConsultationTests extends TestBase{
     }
 
     @Test
+    @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Пользователь может открыть модально окно 'Получить консультацию'")
     void successfulGetConsultationButtonPressTest() {
 
@@ -25,6 +32,7 @@ public class ConsultationTests extends TestBase{
     }
 
     @Test
+    @Severity(SeverityLevel.NORMAL)
     @DisplayName("Пользователь может закрыть модально окно 'Получить консультацию'")
     void successfulGetConsultationWindowCloseTest() {
 
@@ -35,6 +43,7 @@ public class ConsultationTests extends TestBase{
     }
 
     @Test
+    @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Пользователь не может отправить пустой запрос на консультацию")
     void successfulNoEmptyConsultationFormTest() {
         landingFormPage.openMain().
