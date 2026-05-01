@@ -11,6 +11,7 @@ import pages.LandingFormPage;
 public class ConsultationTests extends TestBase{
 
     @Test
+    @Owner("ASchastlivtsev")
     @Severity(SeverityLevel.BLOCKER)
     @DisplayName("На странице есть кнопка 'Получить консультацию'")
     void successfulGetConsultationButtonTest() {
@@ -19,6 +20,7 @@ public class ConsultationTests extends TestBase{
     }
 
     @Test
+    @Owner("ASchastlivtsev")
     @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Пользователь может открыть модально окно 'Получить консультацию'")
     void successfulGetConsultationButtonPressTest() {
@@ -29,6 +31,7 @@ public class ConsultationTests extends TestBase{
     }
 
     @Test
+    @Owner("ASchastlivtsev")
     @Severity(SeverityLevel.NORMAL)
     @DisplayName("Пользователь может закрыть модально окно 'Получить консультацию'")
     void successfulGetConsultationWindowCloseTest() {
@@ -40,6 +43,7 @@ public class ConsultationTests extends TestBase{
     }
 
     @Test
+    @Owner("ASchastlivtsev")
     @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Пользователь не может отправить пустой запрос на консультацию")
     void successfulNoEmptyConsultationFormTest() {
