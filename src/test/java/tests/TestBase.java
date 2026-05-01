@@ -50,10 +50,12 @@ public class TestBase {
 
     @AfterEach
     void addAttachments() {
+        String sessionId = Selenide.sessionId().toString();
+        System.out.println("DEBUG: Session ID for Video: " + sessionId);
         Attachments.screenshotAs("Скрин");
         Attachments.pageSource();
         Attachments.browserConsoleLogs();
-        String sessionId = Selenide.sessionId().toString();
+
         closeWebDriver();
 //        try {
 //            Thread.sleep(6000);
