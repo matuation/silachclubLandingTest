@@ -41,7 +41,7 @@ public class Attachments {
 
     @Attachment(value = "Видео", type = "text/html", fileExtension = ".html")
     public static String addVideo(String sessionId) {
-        String videoUrl = "http://185.154.53.106:4444/video/" + sessionId + ".mp4";
+        String videoUrl = "http://185.154.53.106:8090/video/" + sessionId + ".mp4";
         return "<html><body><video width='100%' height='100%' controls autoplay><source src='"
                 + videoUrl
                 + "' type='video/mp4'></video></body></html>";
