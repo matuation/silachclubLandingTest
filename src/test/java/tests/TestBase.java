@@ -50,18 +50,22 @@ public class TestBase {
 
     @AfterEach
     void addAttachments() {
+        String sessionId = Selenide.sessionId().toString();
+        if (config.isRemote()) {
+            System.out.println("DEBUG: Java Session ID: " + sessionId);
+        }
         Attachments.screenshotAs("Скрин");
         Attachments.pageSource();
         Attachments.browserConsoleLogs();
 
         closeWebDriver();
-//        try {
-//            Thread.sleep(6000);
-//        } catch (InterruptedException e) {
-//            throw new RuntimeException(e);
-//        }
-        Attachments.addVideo();
-
+        if (config.isRemote()) {
+            try {
+                Thread.sleep(5000);
+            } catch (InterruptedException ignored) {
+            }
+            Attachments.addVideo(sessionId);
+        }
     }
 }
 
