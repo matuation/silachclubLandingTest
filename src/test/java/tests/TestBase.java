@@ -36,6 +36,7 @@ public class TestBase {
         Configuration.pageLoadStrategy = System.getProperty("pageLoadStrat", "eager");
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.<String, Object>of("enableVNC", true, "enableVideo", true));
+        capabilities.setCapability("goog:loggingPrefs", Map.of("browser", "ALL"));
         Configuration.browserCapabilities = capabilities;
 
 

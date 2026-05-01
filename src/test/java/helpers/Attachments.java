@@ -33,9 +33,6 @@ public class Attachments {
     }
 
     public static void browserConsoleLogs() {
-        if (browser == "firefox") {
-            return;
-        }
         attachAsText(
                 "Логи браузера",
                 String.join("\n", Selenide.getWebDriverLogs(BROWSER))
@@ -50,7 +47,7 @@ public class Attachments {
     }
 
     public static URL getVideoUrl() {
-        String videoUrl = "https://selenoid.autotests.cloud/video/" + sessionId() + ".mp4";
+        String videoUrl = "http://185.154.53.106:4444/video/" + sessionId() + ".mp4";
         try {
             return new URL(videoUrl);
         } catch (MalformedURLException e) {
