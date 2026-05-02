@@ -26,10 +26,6 @@ public class TestBase {
 
     @BeforeAll
     static void beforeAll() {
-
-        System.out.println("ENVIRONMENT: " + System.getProperty("env"));
-        System.out.println("IS REMOTE: " + config.isRemote());
-
         if (config.isRemote()) {
             Configuration.remote = config.remoteUrl();
         }
@@ -43,7 +39,6 @@ public class TestBase {
         capabilities.setCapability("goog:loggingPrefs", Map.of("browser", "ALL"));
         Configuration.browserCapabilities = capabilities;
 
-
     }
 
     @BeforeEach
@@ -54,21 +49,11 @@ public class TestBase {
     @AfterEach
     void addAttachments() {
         String sessionId = Selenide.sessionId().toString();
-        if (config.isRemote()) {
-            System.out.println("DEBUG: Java Session ID: " + sessionId);
-        }
         Attachments.screenshotAs("Скрин");
         Attachments.pageSource();
         Attachments.browserConsoleLogs();
-
         closeWebDriver();
-        try {
-            Thread.sleep(7000); // 7 секунд — хватит даже для длинного видео
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-            Attachments.addVideo(sessionId);
+        Attachments.addVideo(sessionId);
 
     }
 }

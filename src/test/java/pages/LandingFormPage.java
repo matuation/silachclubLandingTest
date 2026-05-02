@@ -17,9 +17,7 @@ public class LandingFormPage {
             coachWindowClose =
                     $x("//div[contains(@class, '8951247671741933136591') and contains(@data-elem-id, '1741933136591')]");
 
-
-
-    CheckResultComponent checkResultComponent = new CheckResultComponent();
+    private final CheckResultComponent checkResultComponent = new CheckResultComponent();
 
     @Step("Открыть Главую страницу")
     public LandingFormPage openMain() {

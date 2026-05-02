@@ -3,12 +3,11 @@ package tests;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import pages.LandingFormPage;
 
 @Epic("EPC-4 Взаимодействие с блоком консультации")
 @Story("STR-18 Консультация")
 @Feature("Получение консультации")
-public class ConsultationTests extends TestBase{
+public class ConsultationTests extends TestBase {
 
     @Test
     @Owner("ASchastlivtsev")
