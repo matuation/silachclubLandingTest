@@ -27,7 +27,7 @@ public class TestBase {
     @BeforeAll
     static void beforeAll() {
         if (config.isRemote()) {
-            Configuration.remote = config.remoteUrl();
+            Configuration.remote = "https://" + System.getProperty("remoteBaseUsername") + ":" + System.getProperty("remoteBasePass") + "@" + config.remoteUrl();
         }
         baseUrl = System.getProperty("baseUrl", "https://silachclub.ru/");
         Configuration.browser = config.browser();
