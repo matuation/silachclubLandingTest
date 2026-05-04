@@ -48,6 +48,6 @@ https://github.com/user-attachments/assets/8b793b35-5a2a-4d82-ac75-ab4371994cf0
 
 Подбробнейший отчет в TMS Allure Testops с генерацией ручных тест-кейсов на основе кода
 
-<img src="https://github.com/matuation/silachclubLandingTest/blob/main/media/testops.png"/>
+<img src="https://github.com/matuation/silachclubLandingTest/blob/main/media/testops.jpg"/>
 
 ---
