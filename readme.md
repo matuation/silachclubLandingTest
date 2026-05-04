@@ -15,12 +15,6 @@
 - Telegram <img src="https://github.com/matuation/silachclubLandingTest/blob/main/media/telegram.png" width="50" height="50"/>
 
 ---
-
-## Видео выполнения теста
-
-https://github.com/user-attachments/assets/8b793b35-5a2a-4d82-ac75-ab4371994cf0
-
----
 ## Джоба в [Jenkins](https://jenkins.autotests.cloud/view/java_students/job/silachclubLanding_ui_Tests/)
 
 Удобная параметризированная сборка
