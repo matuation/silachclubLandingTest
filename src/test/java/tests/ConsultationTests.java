@@ -49,6 +49,6 @@ public class ConsultationTests extends TestBase {
         landingFormPage.openMain().
                 consultationClick()
                 .consultationSendButton()
-                .checkModalConsultationWindowErrorValue("Пожалуйста, заполните все обязательные поля");
+                .checkModalConsultationWindowErrorValue("Please fill out all required fields");
     }
 }
