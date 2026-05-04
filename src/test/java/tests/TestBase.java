@@ -32,8 +32,8 @@ public class TestBase {
         baseUrl = System.getProperty("baseUrl", "https://silachclub.ru/");
         Configuration.browser = config.browser();
         Configuration.browserVersion = config.browserVersion();
-        Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
-        Configuration.pageLoadStrategy = System.getProperty("pageLoadStrat", "eager");
+        Configuration.browserSize = config.browserSize();
+        Configuration.pageLoadStrategy = config.pageLoadStrategy();
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.<String, Object>of("enableVNC", true, "enableVideo", true));
         capabilities.setCapability("goog:loggingPrefs", Map.of("browser", "ALL"));

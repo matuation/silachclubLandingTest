@@ -16,6 +16,14 @@ public interface WebConfig extends Config {
     @DefaultValue("")
     String browserVersion();
 
+    @Key("browserSize")
+    @DefaultValue("")
+    String browserSize();
+
+    @Key("pageLoadStrategy")
+    @DefaultValue("")
+    String pageLoadStrategy();
+
     @Key("isRemote")
     @DefaultValue("false")
     boolean isRemote();
