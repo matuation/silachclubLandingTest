@@ -44,7 +44,7 @@ https://github.com/user-attachments/assets/8b793b35-5a2a-4d82-ac75-ab4371994cf0
 
 ## Отчёт в [Allure Testops](https://allure.autotests.cloud/project/5192/test-cases/44210?treeId=0)
 
-Подбробнейший отчет в TMS Allure Testops с генерацией ручных тест-кейсов на основе кода
+Подробнейший отчет в TMS Allure Testops с генерацией ручных тест-кейсов на основе кода
 
 <img src="https://github.com/matuation/silachclubLandingTest/blob/main/media/testops.png"/>
 
