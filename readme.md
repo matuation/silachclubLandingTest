@@ -30,7 +30,7 @@ https://github.com/user-attachments/assets/8b793b35-5a2a-4d82-ac75-ab4371994cf0
 
 Понятный визуализированный отчёт по результатам с вложениями - скриншот, видео, etc
 
-<img src="https://github.com/matuation/silachclubLandingTest/blob/main/media/allure.png"/>
+<img src="https://github.com/matuation/silachclubLandingTest/blob/main/media/allurereport.png"/>
 
 ---
 
