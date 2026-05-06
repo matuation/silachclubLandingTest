@@ -42,14 +42,4 @@ public class Attachments {
                 + videoUrl
                 + "' type='video/mp4'></video></body></html>";
     }
-
-//    public static URL getVideoUrl() {
-//        String videoUrl = "http://185.154.53.106:4444/video/" + sessionId() + ".mp4";
-//        try {
-//            return new URL(videoUrl);
-//        } catch (MalformedURLException e) {
-//            e.printStackTrace();
-//        }
-//        return null;
-//    }
 }
