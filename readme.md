@@ -1,6 +1,7 @@
 # Автотесты для [спортивного клуба "Силач"](https://silachclub.ru/)
 <img src="https://github.com/matuation/silachclubLandingTest/blob/main/media/silachmainpage.png"/>
-Используемые технологии:
+
+## Используемые технологии:
 
 -  <img src="https://github.com/matuation/silachclubLandingTest/blob/main/media/java.png" width="50" height="50"/> Java
 -  <img src="https://github.com/matuation/silachclubLandingTest/blob/main/media/intellijidea.png" width="50" height="50"/> IntelliJ IDEA
@@ -9,10 +10,7 @@
 -  <img src="https://github.com/matuation/silachclubLandingTest/blob/main/media/gradle.png" width="50" height="50"/> Gradle
 -  <img src="https://github.com/matuation/silachclubLandingTest/blob/main/media/junit5.png" width="50" height="50"/> JUnit5
 -  <img src="https://github.com/matuation/silachclubLandingTest/blob/main/media/selenide.png" width="50" height="50"/> Selenide
--  <img src="https://github.com/matuation/silachclubLandingTest/blob/main/media/allure.png" width="50" height="50"/> Allure +
-
-TestOps
-
+-  <img src="https://github.com/matuation/silachclubLandingTest/blob/main/media/allure.png" width="50" height="50"/> Allure +TestOps
 -  <img src="https://github.com/matuation/silachclubLandingTest/blob/main/media/jenkins.png" width="50" height="50"/> Jenkins
 -  <img src="https://github.com/matuation/silachclubLandingTest/blob/main/media/telegram.png" width="50" height="50"/> Telegram
 
@@ -44,7 +42,7 @@ https://github.com/user-attachments/assets/8b793b35-5a2a-4d82-ac75-ab4371994cf0
 
 ---
 
-## Отчёт в Allure Testops
+## Отчёт в [Allure Testops] (https://allure.autotests.cloud/project/5192/test-cases/44210?treeId=0)
 
 Подбробнейший отчет в TMS Allure Testops с генерацией ручных тест-кейсов на основе кода
 
